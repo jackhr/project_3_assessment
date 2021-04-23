@@ -52,7 +52,7 @@ form {
   border-right: 0;
 }
 
-th {
+#index-table th {
   padding: 5px 10px;
   background-color: rgb(220, 220, 220);
 }
