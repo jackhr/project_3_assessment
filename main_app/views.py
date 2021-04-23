@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .models import Wishlist
+from django.views.generic.edit import CreateView
 
-def home(request):
+
+def index(request):
   return render(request, 'index.html')
