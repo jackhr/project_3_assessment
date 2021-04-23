@@ -13,6 +13,6 @@ class WishCreate(CreateView):
   model = Wish
   fields = '__all__'
 
-def dlete_wish(request, wish_id):
+def delete_wish(request, wish_id):
   Wish.objects.get(id=wish_id).delete()
   return redirect('/')
