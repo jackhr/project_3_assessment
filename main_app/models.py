@@ -4,7 +4,7 @@ from django.urls import reverse
 
 # Create your models here.
 
-class Wishlist(models.Model):
+class Wish(models.Model):
   description = models.TextField(max_length=250)
 
   def __str__(self):
