@@ -10,7 +10,10 @@
 </head>
 <body>
   <h1>Wish List Items</h1>
-  {% if whishes.count %}
+
+  {% if not wishes.count %}
+    <h3>No Wish Items Exist</h3>
+  {% else %}
     <table>
       <thead>
         <tr>
@@ -27,8 +30,6 @@
         {% endfor %}
       </tbody>
     </table>
-  {% else %}
-    <h3>No Wish Items Exist</h3>
   {% endif %}
   <hr>
   <a href="{% url 'add_wish' %}"><button>Add A Wish Item</button></a>
